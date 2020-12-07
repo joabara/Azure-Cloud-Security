@@ -3,6 +3,7 @@ In this repository I will share with you one of my first exercises in creating a
 
 ## Network Topography
 This is how the network was implemented on Azure:
+
 ![alt text](https://github.com/joabara/Azure-Cloud-Security/blob/main/Diagrams/AzureCloudDiagram.PNG)
 
 ## Methodology
@@ -15,4 +16,7 @@ An ELK server was configured on a separate network (10.1.0.0 vs 10.0.0.0) to rec
 Once all the machines were configured on Azure and security policies were implemented, I pulled an Ansible container via Docker to create various playbooks to install packages from the Jump-Box to the webservers group. This allowed me to write playbooks that could be run to install packages like ELK, Filebeat, and Metricbeat to the various servers.
 
 Since the web servers does not produce much data, I used sample Kibana data to sample data that the Web Servers could produce. In this case, the sample data represents web traffic:
+
 ![alt text](https://github.com/joabara/Azure-Cloud-Security/blob/main/Diagrams/KibanaSampleLog.PNG)
+
+
