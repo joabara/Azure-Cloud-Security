@@ -18,6 +18,7 @@ Once all the machines were configured on Azure and security policies were implem
 Since the web servers does not produce much data, I used sample Kibana data to sample data that the Web Servers could produce. In this case, the sample data represents web traffic:
 
 Response Codes Over Time: 
+
 ![alt text](https://github.com/joabara/Azure-Cloud-Security/blob/main/Diagrams/KibanaSampleLog.PNG)
 
 
