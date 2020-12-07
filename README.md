@@ -53,24 +53,28 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because we can a implement various configurations to a large number of machines automatically. While this network only has a handful of machines, one can imagine a larger network would require automated configurations; manual configurations would just take too long!
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+* Install Docker.io
+* Install python-pip3
+* Increase virtual memory
+* Use sysctl to use more memory
+* Download and launch an elk container, while listing the ports it will run on
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![docker ps](https://github.com/joabara/Azure-Cloud-Security/blob/main/Diagrams/docker%20ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+Web-1 10.0.0.5
+Web-2 10.0.0.6
+Web-3 10.0.0.7
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+Web-1 10.0.0.5
+Web-2 10.0.0.6
+Web-3 10.0.0.7
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
